@@ -28,22 +28,30 @@ docker run -it sequenceiq/hadoop-docker /etc/bootstrap.sh -bash
 
 ### 4store
 
+Docker container based on [the script](https://github.com/joejimbo/dev-setup/blob/master/install-4store-ubuntu-14-04.sh) is on the [public Docker Hub Repository](https://hub.docker.com/u/inutano/4store/).
+
 ```
 docker run -it inutano/4store bash
 ```
 
 ### Jena
 
+Docker container based on [the script](https://github.com/joejimbo/dev-setup/blob/master/install-jena-ubuntu-14-04.sh) is on the [public Docker Hub Repository](https://hub.docker.com/u/inutano/jena/).
+
 ```
 docker run -it inutano/jena bash
 ```
 ### Virtuoso
+
+Docker container based on [the script](https://github.com/joejimbo/dev-setup/blob/master/install-virtuoso-ubuntu-14-04.sh) is on the [public Docker Hub Repository](https://hub.docker.com/u/inutano/virtuoso/).
 
 ```
 docker run -it -p 8890:8890 inutano/virtuoso
 ```
 
 ### RDF-tools
+
+Docker container based on [the script](https://github.com/joejimbo/dev-setup/blob/master/install-rdf-tools-ubuntu-14-04.sh) is on the [public Docker Hub Repository](https://hub.docker.com/u/inutano/rdf-tools/).
 
 ```
 docker run -it inutano/rdf-tools bash
