@@ -12,8 +12,8 @@ MAINTAINER Tazro Inutano Ohta, inutano@gmail.com
 RUN apt-get update && \
     apt-get install -y automake gperf libtool flex bison \
             libssl-dev libraptor2-0 librasqal3 libraptor2-dev \
-            librasqal3-dev ncurses-base lib64ncurses5 \
-            lib64ncurses5-dev libreadline6-dev uuid-dev libglib2.0-dev && \
+            librasqal3-dev ncurses-base libncurses5 \
+            libncurses5-dev libreadline6-dev uuid-dev libglib2.0-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Install 4store
