@@ -9,7 +9,7 @@ FROM dockerfile/ruby
 MAINTAINER Tazro Inutano Ohta, inutano@gmail.com
 
 # Install rdf2json
-RUN gem install rdf2json
+RUN gem update rdoc && gem install rdf2json
 
 # Install any23
 ENV ANY23_VERSION 1.1
