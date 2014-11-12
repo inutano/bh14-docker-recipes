@@ -16,6 +16,7 @@ RUN apt-get update && \
 # Install virtuoso
 ENV VIRTUOSO_VERSION develop/7
 RUN \
+  cd /tmp && \
   git clone https://github.com/openlink/virtuoso-opensource.git && \
   cd virtuoso-opensource && \
   git checkout $VIRTUOSO_VERSION && \
@@ -24,6 +25,7 @@ RUN \
   ./configure && \
   make && \
   make install && \
+  rm -fr /tmp/virtuoso-opensource
 
 # Define working directory.
 WORKDIR /data
