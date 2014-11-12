@@ -3,17 +3,12 @@ Dockerfiles for benchmarking on #BioHack14
 
 A set of instructions and Dockerfiles to build containers for [dev-setup by joejimbo](https://github.com/joejimbo/dev-setup).
 
-- 4store
 - Elasticsearch
 - Hadoop
+- 4store
 - Jena
+- Virtuoso
 - RDF-tools
-
-### 4store
-
-```
-docker run -it inutano/4store bash
-```
 
 ### Elasticsearch
 
@@ -31,10 +26,21 @@ Public docker container by [sequenceiq](http://sequenceiq.com) is on the [public
 docker run -it sequenceiq/hadoop-docker /etc/bootstrap.sh -bash
 ```
 
+### 4store
+
+```
+docker run -it inutano/4store bash
+```
+
 ### Jena
 
 ```
 docker run -it inutano/jena bash
+```
+### Virtuoso
+
+```
+docker run -it -p 8890:8890 inutano/virtuoso
 ```
 
 ### RDF-tools
