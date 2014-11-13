@@ -36,7 +36,8 @@ RUN \
   chown -R `whoami` db
 
 # Define default command.
-CMD cd /usr/local/virtuoso-opensource/var/lib/virtuoso/db && /usr/local/virtuoso-opensource/bin/virtuoso-t +foreground
+WORKDIR /usr/local/virtuoso-opensource/var/lib/virtuoso/db
+CMD["/usr/local/virtuoso-opensource/bin/virtuoso-t","+foreground"]
 
 # Expose ports.
 #   - 8890: HTTP
