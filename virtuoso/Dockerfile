@@ -37,7 +37,7 @@ RUN \
 
 # Define default command.
 WORKDIR /usr/local/virtuoso-opensource/var/lib/virtuoso/db
-CMD["/usr/local/virtuoso-opensource/bin/virtuoso-t","+foreground"]
+CMD ["/usr/local/virtuoso-opensource/bin/virtuoso-t","+foreground"]
 
 # Expose ports.
 #   - 8890: HTTP
