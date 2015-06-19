@@ -3,7 +3,7 @@
 # VERSION 0.1.1
 
 # Pull base image.
-FROM dockerfile/java:oracle-java7
+FROM java:7
 
 # :)
 MAINTAINER Tazro Inutano Ohta, inutano@gmail.com
