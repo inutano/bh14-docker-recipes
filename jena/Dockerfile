@@ -1,15 +1,15 @@
 # Docker container for Apache Jena
 #
-# VERSION 0.1.1
+# VERSION 0.2.0
 
 # Pull base image.
-FROM java:7
+FROM java:8
 
 # :)
 MAINTAINER Tazro Inutano Ohta, inutano@gmail.com
 
 # Specify the version of Jena.
-ENV JENA_VERSION 2.13.0
+ENV JENA_VERSION 3.9.0
 
 # Install Jena.
 RUN \
